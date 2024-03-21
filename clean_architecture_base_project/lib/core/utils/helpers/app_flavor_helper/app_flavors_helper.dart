@@ -1,4 +1,5 @@
 import 'package:clean_architecture_base_project/core/utils/constants/app_constants.dart';
+import 'package:clean_architecture_base_project/core/utils/helpers/app_flavor_helper/environment_config.dart';
 import 'package:injectable/injectable.dart';
 
 /// this enum will present the list of supported environments
@@ -60,5 +61,9 @@ class AppFlavorsHelper {
 
   ProductFlavor? get productFlavor => _productFlavor;
 
-  String? get baseUrl => _baseUrl;
+  String? get baseUrl {
+    _productFlavor = EnvironmentConfig.BUILD_VARIANT.toProductFlavor();
+    _baseUrl = _productFlavor?.setBaseUrl();
+    return _baseUrl;
+  }
 }

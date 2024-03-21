@@ -48,22 +48,3 @@ extension StringExtension on String {
     }
   }
 }
-
-@singleton
-class AppFlavorsHelper {
-  ProductFlavor? _productFlavor;
-  String? _baseUrl;
-
-  void configure({required ProductFlavor? productFlavor}) {
-    _productFlavor = productFlavor;
-    _baseUrl = productFlavor?.setBaseUrl();
-  }
-
-  ProductFlavor? get productFlavor => _productFlavor;
-
-  String? get baseUrl {
-    _productFlavor = EnvironmentConfig.BUILD_VARIANT.toProductFlavor();
-    _baseUrl = _productFlavor?.setBaseUrl();
-    return _baseUrl;
-  }
-}

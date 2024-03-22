@@ -1,4 +1,3 @@
-import 'package:clean_architecture_base_project/core/di/app_component/app_component.dart';
 import 'package:clean_architecture_base_project/core/utils/helpers/app_flavor_helper/app_flavors_helper.dart';
 import 'package:clean_architecture_base_project/core/utils/helpers/app_flavor_helper/environment_config.dart';
 import 'package:clean_architecture_base_project/core/utils/helpers/app_theme_helper/custom_theme_data.dart';

@@ -1,6 +1,4 @@
 import 'package:clean_architecture_base_project/core/utils/constants/app_constants.dart';
-import 'package:clean_architecture_base_project/core/utils/helpers/app_flavor_helper/environment_config.dart';
-import 'package:injectable/injectable.dart';
 
 /// this enum will present the list of supported environments
 enum ProductFlavor {

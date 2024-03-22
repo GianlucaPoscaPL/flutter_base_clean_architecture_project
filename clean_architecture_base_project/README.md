@@ -6,7 +6,7 @@ Uncle Bob's architecture is based on the dependency inversion principle to defin
 
 Nothing in an inner circle can know anything at all about something in an outer circle.
 
-https://res.cloudinary.com/practicaldev/image/fetch/s--8Fs2hOeU--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_800/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/fqeiepngw5aeco73r3wx.png
+![Image structure](https://res.cloudinary.com/practicaldev/image/fetch/s--8Fs2hOeU--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_800/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/fqeiepngw5aeco73r3wx.png)
 
 When a user interacts with the Widget, we communicate their action to the Provider class, which then connects to the useCase to retrieve the action's result. Following that, the useCase communicates with the Repository class in order to obtain the solution from a remote or local DataSource
 
